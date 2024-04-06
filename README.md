@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# Weather Dashboard Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Weather Dashboard application! This application provides current weather conditions, a 5-day forecast, and historical weather data for any city searched by the user.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for weather information by city name.
+- View current weather conditions.
+- Get a 5-day weather forecast.
+- Access historical weather data for the searched location.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+What things you need to install the software:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/)
+- An API Key from [OpenWeatherMap](https://openweathermap.org/api)
 
-### `npm run build`
+### Installing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A step-by-step series of examples that tell you how to get a development environment running:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1.  Clone the repository to your local machine.
+    `git clone https://github.com/xavjamito/weather-app`
+2.  Navigate to the cloned repo.
+    `cd weather-app`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3.  Install dependencies
+    `npm install`
+4.  Set up your environment variables by creating a `.env` file in the root directory and adding your OpenWeatherMap API key:
+    `REACT_APP_OPEN_WEATHER_API_KEY=your_api_key_here`
 
-### `npm run eject`
+### Obtaining the OpenWeatherMap API Key
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+To use the OpenWeatherMap API, you'll need to sign up and obtain an API key:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1.  Go to [OpenWeatherMap](https://openweathermap.org/).
+2.  Sign up for an account.
+3.  After signing up, go to the API keys tab on your account page.
+4.  Click on the 'Create Key' button to generate a new API key.
+5.  Copy the generated API key and paste it into your `.env` file as shown above.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Remember that it may take a maximum of two hours for the new API key to become active.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Running the Application
 
-## Learn More
+With the API key set, start the application by running:
+`npm start`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Simply enter the name of the city for which you wish to check the weather in the search bar. The current weather, forecast, and historical data will be displayed on the screen.
+
+## Built With
+
+- [React](https://reactjs.org/) - The web framework used.
+- [Tailwind CSS](https://tailwindcss.com/) - For styling.
+- [DaisyUI](https://daisyui.com/) - UI component library.
+- [OpenWeatherMap API](https://openweathermap.org/api) - Source of the weather data.
